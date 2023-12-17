@@ -1,3 +1,4 @@
+# Treinando programação. Créditos ao site:   
 # DevMentor Brasil - Projeto página tênis
 
 ## Bem vindo! 👋
