@@ -1,0 +1,100 @@
+/* ============= CSS ================ */
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+:root{
+    --black : #333;
+    --black_OPacity: rgba(0,0,0,.1);
+    --white: #f7f7f6;
+    --blue: #74d3ff; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: var(--black);
+    font-family: 'Kanit', sans-serif;
+
+}
+.hero-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--black_OPacity);
+
+}
+.hero-box > .logo {
+    padding-left: 50px;
+}
+
+.hero-box  > .bar ul  {
+    list-style: none;
+    display: flex;
+
+}
+.hero-box > .bar li{
+    padding: 27px 35px;
+    transition: all 0.25s ease-in-out;
+}
+.hero-box > .bar li:hover{
+    background-color: var(--black_OPacity)
+}
+.hero-box  > .bar a{
+    text-decoration: none;
+    color: var(--black);
+    
+}
+.hero-box > .car-box{
+    padding: 27px 40px; 
+    border-left: 1px solid var(--black_OPacity);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    
+}
+.hero-box > .car-box:hover{
+    background-color: var(--black_OPacity);
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 70px);
+    justify-content: space-between;
+}
+
+section .left {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    place-content: center;
+    place-items: center;
+    height: 90vh;
+    width: 45.5vw;
+    
+}
+.button-1{
+    display: flex;
+    flex-direction: initial;
+}
+
+
+/* *  */
+
+section .right{
+    flex: 1;
+    height: 100%;
+    background-color: var(--blue);
+    position: relative;
+    
+}
+
+
+/* section .right img {
+
+} */
+/* ================================== */
+
