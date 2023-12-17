@@ -5,6 +5,7 @@
 :root{
     --black : #333;
     --black_OPacity: rgba(0,0,0,.1);
+    --black_OPacity2: rgba(0,0,0,.3);
     --white: #f7f7f6;
     --blue: #74d3ff; 
 }
@@ -46,7 +47,7 @@ html {
 .hero-box  > .bar a{
     text-decoration: none;
     color: var(--black);
-    
+
 }
 .hero-box > .car-box{
     padding: 27px 40px; 
@@ -61,7 +62,7 @@ html {
 
 main{
     display: flex;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     justify-content: space-between;
 }
 
@@ -73,14 +74,55 @@ section .left {
     place-content: center;
     place-items: center;
     height: 90vh;
-    width: 45.5vw;
+    width: 49vw;
     
 }
+.left h1{
+    font-size: 3.3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.left p {
+    font-size: 1.3rem;
+    margin: 20px 0 ;
+}
+
 .button-1{
     display: flex;
     flex-direction: initial;
+    margin-top: 20px;
+
+}
+.button-1 button {
+    transition: all 0.4s ease;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#buttoDetalhe{
+    padding: 23px 15px;
+    border: none;
+    color: var(--white);
+    background-color: var(--black_OPacity2);
+    font-weight: bold;
+
+    
+}
+#buttonCarrinho{
+    padding: 23px 30px;
+    border: none;
+    color: var(--white);
+    background: #000;
+    font-weight: bold;
+
 }
 
+
+#buttonCarrinho:hover, #buttoDetalhe:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 10px 20px var(--black_OPacity2) ;
+
+}
 
 /* *  */
 
@@ -92,9 +134,12 @@ section .right{
     
 }
 
+ section .right img {
+    width: 100%;
+    position: relative;
+    right: 153px;
+    top: 55px;
 
-/* section .right img {
-
-} */
+}
 /* ================================== */
 
